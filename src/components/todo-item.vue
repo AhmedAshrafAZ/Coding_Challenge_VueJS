@@ -18,9 +18,6 @@
           <v-btn color="red darken-4" dark text @click="dialog = false">
             Cancel
           </v-btn>
-          
-          <v-spacer></v-spacer>
-          
           <v-btn color="green darken-1" dark text @click="editTodo()">
             Edit
           </v-btn>
@@ -41,7 +38,6 @@
         <v-btn class="darken-1" @click.stop="dialog = true" color="primary">
           <v-icon left>mdi-pencil</v-icon>Edit
         </v-btn>
-        <v-spacer></v-spacer>
         <v-btn class="lighten-1" color="success" @click="completeTodo()">
           <v-icon left>mdi-check-circle</v-icon>Done
         </v-btn>
