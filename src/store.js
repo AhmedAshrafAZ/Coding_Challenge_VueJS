@@ -16,8 +16,7 @@ export default new Vuex.Store({
         i++
       )
         if (
-          (taskDone ? this.todosFinished[i] : this.todosInProgress[i]).id ==
-          id
+          (taskDone ? this.todosFinished[i] : this.todosInProgress[i]).id == id
         )
           return i;
       return -1;
@@ -31,7 +30,7 @@ export default new Vuex.Store({
       return state.todosInProgress;
     },
     todosFinished: state => {
-      return state.todosInProgress;
+      return state.todosFinished;
     }
   },
   mutations: {
@@ -48,6 +47,10 @@ export default new Vuex.Store({
     editTodo: (state, { id, newTodo }) => {
       var index = state.getTodoIndex(false, id);
       state.todosInProgress[index].text = newTodo;
+    },
+    removeTodo: (state, id) => {
+      var index = state.getTodoIndex(true, id);
+      state.todosFinished.splice(index, 1);
     }
   },
   actions: {}
