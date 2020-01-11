@@ -23,7 +23,7 @@ Our team was already able to complete the following:
 - [√] Complete the CRUD features in the GUI and make sure they are reflected in the store
 - [√] Make sure the `todo-list` component dynamically displays the todos
 - [√] Write concise commit messages
-- [ ] Submit your git repository to hr@pangea-technology.com and describe your changes precisely
+- [√] Submit your git repository to hr@pangea-technology.com and describe your changes precisely
 
 ## Bonus
 
